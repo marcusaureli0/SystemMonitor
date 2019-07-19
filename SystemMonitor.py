@@ -29,7 +29,7 @@ outNetworkFile = open (folderPath + "\\" + "outNetworkKB.log", "w")
 inPacketFile  = open (folderPath + "\\" + "inPacket.log", "w")
 outPacketFile = open (folderPath + "\\" + "outPacket.log", "w")
 
-# Grava as informações de tempo, cpu, memória, network e pacotes
+# Grava as informacoes de tempo, cpu, memoria, network e pacotes
 # durante o tempo especificado
 while timeCount <= 200:
     timeFile.write("%s\n" % str(timeCount))
