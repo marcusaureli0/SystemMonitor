@@ -16,18 +16,18 @@ outBytes = 0
 inBytes = 0
 delay = 1
 
-folderPath = os.getcwd() + "\SystemMonitorLogs\\" + str(datetime.now().strftime("%B %d %Y - %H%M%S"));
+folderPath = os.getcwd() + "/SystemMonitorLogs/" + str(datetime.now().strftime("%B %d %Y - %H%M%S"));
 os.makedirs(folderPath)
 
 # Nomes dos arquivos de log
-timeFile = open (folderPath + "\\" + "time.log", "w")
-memoryPercentFile = open (folderPath + "\\" + "memoryPercent.log", "w")
-memoryUsedFile = open (folderPath + "\\" + "memoryUsedMB.log", "w")
-cpuFile = open (folderPath + "\\" + "cpu.log", "w+")
-inNetworkFile = open (folderPath + "\\" + "inNetworkKB.log", "w")
-outNetworkFile = open (folderPath + "\\" + "outNetworkKB.log", "w")
-inPacketFile  = open (folderPath + "\\" + "inPacket.log", "w")
-outPacketFile = open (folderPath + "\\" + "outPacket.log", "w")
+timeFile = open (folderPath + "/" + "time.log", "w")
+memoryPercentFile = open (folderPath + "/" + "memoryPercent.log", "w")
+memoryUsedFile = open (folderPath + "/" + "memoryUsedMB.log", "w")
+cpuFile = open (folderPath + "/" + "cpu.log", "w+")
+inNetworkFile = open (folderPath + "/" + "inNetworkKB.log", "w")
+outNetworkFile = open (folderPath + "/" + "outNetworkKB.log", "w")
+inPacketFile  = open (folderPath + "/" + "inPacket.log", "w")
+outPacketFile = open (folderPath + "/" + "outPacket.log", "w")
 
 # Grava as informacoes de tempo, cpu, memoria, network e pacotes
 # durante o tempo especificado
