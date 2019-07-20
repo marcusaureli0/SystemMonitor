@@ -1,0 +1,15 @@
+classdef PropertyManager  
+    properties
+        reader
+    end
+    
+    methods
+      function obj = PropertyManager(path)
+          reader = FileReader(path);
+          p = Properties();
+          p.load(reader);
+        
+          obj.reader = reader;
+      end
+  end
+end
